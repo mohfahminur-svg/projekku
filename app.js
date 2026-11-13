@@ -166,7 +166,7 @@ function formatFullTransactionDateTime(tx) {
       const d = parseInt(parts[2], 10);
       const dt = new Date(y, m, d);
       const dayName = INDO_DAYS[dt.getDay()] || '';
-      const monthName = INDO_MONTHS_FULL[m] || '';
+      const monthName = INDO_MONTHS_SHORT[m] || '';
       return `${dayName}, ${d} ${monthName} ${y} • ${timeStr} WIB`;
     }
   }
@@ -2448,10 +2448,10 @@ function selectStatsPeriod(type) {
   } else if (type === '7days') {
     statsFilter.label = '7 Hari Terakhir';
   } else if (type === 'this_month') {
-    statsFilter.label = INDO_MONTHS_FULL[curMonth] + ' ' + curYear;
+    statsFilter.label = INDO_MONTHS_SHORT[curMonth] + ' ' + curYear;
   } else if (type === 'last_month') {
     const lastM = new Date(curYear, curMonth - 1, 1);
-    statsFilter.label = INDO_MONTHS_FULL[lastM.getMonth()] + ' ' + lastM.getFullYear();
+    statsFilter.label = INDO_MONTHS_SHORT[lastM.getMonth()] + ' ' + lastM.getFullYear();
   } else if (type === 'this_year') {
     statsFilter.label = 'Tahun ' + curYear;
   } else if (type === 'all') {
@@ -2595,7 +2595,7 @@ function initExportModalDates() {
 
   const statsPeriod = document.getElementById('statsSelectedPeriodLabel');
   if (statsPeriod && (statsPeriod.textContent.includes('202') || statsPeriod.textContent.includes('Bulan'))) {
-    statsPeriod.textContent = `${INDO_MONTHS_FULL[now.getMonth()]} ${curYear}`;
+    statsPeriod.textContent = `${INDO_MONTHS_SHORT[now.getMonth()]} ${curYear}`;
   }
 }
 

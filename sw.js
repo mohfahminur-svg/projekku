@@ -1,4 +1,4 @@
-const CACHE_NAME = 'payqu-cache-v21';
+const CACHE_NAME = 'payqu-cache-v27';
 const STATIC_ASSETS = [
   './',
   './index.html',
@@ -6,17 +6,15 @@ const STATIC_ASSETS = [
   './manifest.json?v=3',
   './exceljs.min.js',
   './app.js',
-  './app.js?v=3.6.0',
+  './app.js?v=3.12.0',
   './payqu-192.png',
-  './payqu-192.png?v=2',
   './payqu-512.png',
-  './payqu-512.png?v=2',
-  './payqu-logo.png',
-  './payqu-logo.png?v=2',
-  './payqu-logo.png?v=3',
+  './payqu-brand-logo.png',
+  './mascot-finance-clean.png',
+  './mascot-finance-clean.png?v=3',
+  './mascot-peeking.png',
   './pembukaan%20aplikasi.svg',
-  './pembukaan aplikasi.svg',
-  './splash.svg'
+  './pembukaan aplikasi.svg'
 ];
 
 // Install event - pre-cache core assets

@@ -1,4 +1,4 @@
-const CACHE_NAME = 'payqu-cache-v27';
+const CACHE_NAME = 'payqu-cache-v32';
 const STATIC_ASSETS = [
   './',
   './index.html',
@@ -6,12 +6,13 @@ const STATIC_ASSETS = [
   './manifest.json?v=3',
   './exceljs.min.js',
   './app.js',
-  './app.js?v=3.12.0',
+  './app.js?v=3.16.0',
+  './app.js?v=3.17.0',
   './payqu-192.png',
   './payqu-512.png',
   './payqu-brand-logo.png',
   './mascot-finance-clean.png',
-  './mascot-finance-clean.png?v=3',
+  './mascot-finance-clean.png?v=7',
   './mascot-peeking.png',
   './pembukaan%20aplikasi.svg',
   './pembukaan aplikasi.svg'
